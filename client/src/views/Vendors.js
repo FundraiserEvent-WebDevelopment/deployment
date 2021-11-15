@@ -28,7 +28,7 @@ export default function Vendors() {
       <div id="vendors" class="main">
         <h1>Showcase your work; Make a change.</h1>
         <span>
-          November 16th 2021 @ 6-9pm • Western Michigan University • In-person
+          November 18th 2021 @ 4-6pm • Western Michigan University, Lee Honors College • In-person
         </span>
       </div>
       <div id="vendor-list">

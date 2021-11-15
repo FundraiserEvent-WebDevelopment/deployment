@@ -1,5 +1,6 @@
+require('dotenv').config();
 const app = require('express')();
-const PORT = 8080;
+const PORT = process.env.PORT || 8080;
 
 const db = require('./queries');
 
@@ -27,7 +28,7 @@ app.use(
 
 app.listen(
     PORT,
-    () => console.log('App Running on ${PORT}')
+    () => console.log(`App Running on ${PORT}`)
 )
 
 app.get('/vendor', db.getUsers);

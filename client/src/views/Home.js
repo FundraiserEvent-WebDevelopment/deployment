@@ -57,12 +57,16 @@ export default function Home() {
   return (
     <div>
       <div id="home" class="main">
-        <h1>Student Fundraiser Name</h1>
+        <h1>Back2Back</h1>
         <span>
-          November 16th 2021 @ 6-9pm • Western Michigan University • In-person
+          November 18th 2021 @ 4-6pm • Western Michigan University, Lee Honors College • In-person
         </span>
         <div class="buttons">
-          <Button variant="contained">Sign up as a vendor</Button>
+          <Button variant="contained">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSetwSQVZSXA2wXRMJSbf4jhA6awTR5ZdR6nEFXCpylhMG1zXw/viewform">
+              Sign up as a vendor
+            </a>
+          </Button>
           <Button variant="contained">
             <Link to="/vendors">Check out vendors</Link>
           </Button>
@@ -77,13 +81,16 @@ export default function Home() {
         <div class="about-text">
           <h3>Showcase your work</h3>
           <p>
-            The NAME is a fundraising event focused on providing students an
-            opportunity to showcase their works, crafts, and services on campus
+            As Broncos, know that we've always got your back. This fundraiser
+            event aims to help raise funds for the BLM movement and the AAPI
+            community. Thus, the name 'Back2Back' - to show that we, the Western
+            Michigan University community, support the BLM movement and the AAPI
+            community.
           </p>
           <h3>Make a change</h3>
           <p>
-            From handmade jewelry, fresh pastries, and awe-spiring drawings, we
-            aim to raise money for the <b>AAPI community</b> and the{" "}
+            From handmade jewelry, services, and awe-spiring drawings, we aim to
+            raise money for the <b>AAPI community</b> and the{" "}
             <b>BLM Movement.</b>
           </p>
         </div>
@@ -102,8 +109,8 @@ export default function Home() {
               When and where would the event be held?
             </AccordionSummary>
             <AccordionDetails>
-              The event will be held on the 18th of November at 5-8pm located at
-              WMU flagpoles!
+              The event will be held on the 18th of November at 4-6pm located at
+              the Lee Honors College!
             </AccordionDetails>
           </Accordion>
           <Accordion disableGutters sx={styleAccordion}>
@@ -155,11 +162,56 @@ export default function Home() {
               id="panel1a-header"
               sx={styleAccSummary}
             >
-              How to register as a vendor?
+              How do I register as a vendor?
             </AccordionSummary>
             <AccordionDetails>
-              Anyone who is interested to be a vendor should sign-up using this
-              Google Form link.
+              Anyone who is interested to be a vendor should sign-up using this{" "}
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSetwSQVZSXA2wXRMJSbf4jhA6awTR5ZdR6nEFXCpylhMG1zXw/viewform">
+                Google Form link.
+              </a>
+            </AccordionDetails>
+          </Accordion>
+          <Accordion disableGutters sx={styleAccordion}>
+            <AccordionSummary
+              expandIcon={<ExpandMoreIcon />}
+              aria-controls="panel1a-content"
+              id="panel1a-header"
+              sx={styleAccSummary}
+            >
+              What is the method of payment?
+            </AccordionSummary>
+            <AccordionDetails>
+              All payment transactions are to be made in-person within the 4 PM
+              - 6 PM timeframe and will all be mobile.
+            </AccordionDetails>
+          </Accordion>
+          <Accordion disableGutters sx={styleAccordion}>
+            <AccordionSummary
+              expandIcon={<ExpandMoreIcon />}
+              aria-controls="panel1a-content"
+              id="panel1a-header"
+              sx={styleAccSummary}
+            >
+              What kinds of goods/services are not allowed to be sold?
+            </AccordionSummary>
+            <AccordionDetails>
+              Inappropriate/Fraudulent goods/services are not allowed to be
+              sold. Tutoring services are also not allowed.
+            </AccordionDetails>
+          </Accordion>
+          <Accordion disableGutters sx={styleAccordion}>
+            <AccordionSummary
+              expandIcon={<ExpandMoreIcon />}
+              aria-controls="panel1a-content"
+              id="panel1a-header"
+              sx={styleAccSummary}
+            >
+              After being approved to be a vendor, must I attend the event
+              in-person?
+            </AccordionSummary>
+            <AccordionDetails>
+              Vendors must attend the event in-person, but is not obliged to
+              attend for the entirety of the two hours.
             </AccordionDetails>
           </Accordion>
         </div>

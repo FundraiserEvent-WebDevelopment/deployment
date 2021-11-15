@@ -234,3 +234,15 @@ h1 {
   align-content: center;
   justify-content: center;
 }
+
+.about-text,
+.slide-content {
+  line-height: 1.5;
+}
+
+a,
+a:active,
+a:visited,
+a:hover {
+  color: black;
+}
