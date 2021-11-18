@@ -227,12 +227,14 @@ export default function Home() {
       </div>
 
       <div id="sponsors">
-        <h2>Our Sponsors</h2>
+        
+        {/* <h2>Our Sponsors</h2>
         <div>
           <img src={cabImage} alt="" />
           <img src={wsaImage} alt="" />
           <img src={wmuImage} alt="" />
-        </div>
+        </div> */}
+        
         <h2>Who we're fundraising for:</h2>
         <div>
           <img src={aapiImage} alt="" />
