@@ -219,14 +219,14 @@ export default function Home() {
       <div id="detailsbackground"></div>
 
       {/* to be confirmed */}
-      <div id="vendor-showcase">
+      {/* <div id="vendor-showcase">
         <h2>Participating Vendors</h2>
         <Carousel navButtonsAlwaysVisible>
           {carouselSlides.map((slide) => (
             <Slide {...slide} />
           ))}
         </Carousel>
-      </div>
+      </div> */}
 
       <div id="sponsors">
         
