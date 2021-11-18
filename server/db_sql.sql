@@ -16,7 +16,7 @@ create table images(
 	vendor_id INTEGER NOT NULL,
 	is_profile_pic BOOLEAN,
 	link TEXT
-)
+);
 
 -- Deprecated, please use above images table
 create table vendorsImages(
@@ -29,11 +29,11 @@ create table vendorsImages(
 );
 
 COPY vendors(first_name, last_name, pronouns, email, goods_type, description, lower_price, upper_price)
-FROM './dummyDataset.csv'
+FROM './vendorDetails.csv'
 DELIMITER ','
 CSV HEADER;
 
 COPY images(vendor_id, link)
-FROM './dummyDatasetImages.csv'
+FROM './vendorImages.csv'
 DELIMITER ','
 CSV HEADER;
