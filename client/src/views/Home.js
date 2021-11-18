@@ -217,6 +217,8 @@ export default function Home() {
         </div>
       </div>
       <div id="detailsbackground"></div>
+
+      {/* to be confirmed */}
       <div id="vendor-showcase">
         <h2>Participating Vendors</h2>
         <Carousel navButtonsAlwaysVisible>
