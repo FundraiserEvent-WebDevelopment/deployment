@@ -36,6 +36,7 @@ export default function VendorCard(props) {
     async function getImages() {
       try {
         const response = await fetch(
+          // https://wmu-back2back.herokuapp.com/vendorimages/${props.id}
           `/vendorimages/${props.id}`
         );
         const json = await response.json();

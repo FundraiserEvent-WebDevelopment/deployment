@@ -8,6 +8,7 @@ export default function Vendors() {
   useEffect(() => {
     async function getVendors() {
       try {
+        // https://wmu-back2back.herokuapp.com/vendor
         const response = await fetch("/vendor");
         const json = await response.json();
         setVendorList([...json]);
