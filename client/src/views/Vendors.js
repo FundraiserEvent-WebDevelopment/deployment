@@ -8,7 +8,7 @@ export default function Vendors() {
   useEffect(() => {
     async function getVendors() {
       try {
-        const response = await fetch("https://cors-anywhere.herokuapp.com/https://wmu-back2back.herokuapp.com/vendor");
+        const response = await fetch("/vendor");
         const json = await response.json();
         setVendorList([...json]);
       } catch (error) {
