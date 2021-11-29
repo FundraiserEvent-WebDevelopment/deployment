@@ -9,7 +9,9 @@ export default function Vendors() {
     async function getVendors() {
       try {
         // https://wmu-back2back.herokuapp.com/vendor
-        const response = await fetch("/vendor");
+        const response = await fetch(
+          "https://wmu-back2back.herokuapp.com/vendor"
+        );
         const json = await response.json();
         setVendorList([...json]);
       } catch (error) {
@@ -29,7 +31,8 @@ export default function Vendors() {
       <div id="vendors" class="main">
         <h1>Showcase your work; Make a change.</h1>
         <span>
-          November 18th 2021 @ 4-6pm • Western Michigan University, Lee Honors College • In-person
+          November 18th 2021 @ 4-6pm • Western Michigan University, Lee Honors
+          College • In-person
         </span>
       </div>
       <div id="vendor-list">
